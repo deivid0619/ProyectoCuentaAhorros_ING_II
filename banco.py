@@ -39,17 +39,19 @@ class SavingsAccount:
 
         except Exception as e:
             return f"System Error: {str(e)}"
+        
+    def PrintStatement(self):
+        return f"--- Current Balance: ${self.Balance} ---"
 
 # --- MAIN EXECUTION BLOCK (Testing) ---
 if __name__ == "__main__":
     # 1. Create instance
     MyAccount = SavingsAccount()
     
-    # 2. Test Deposit 
-    print(MyAccount.Deposit(1000))
+    # 2. Transactions
+    print(MyAccount.Deposit(2000))
+    print(MyAccount.Withdraw(500))
     
-    # 3. Test Withdraw
-    print(MyAccount.Withdraw(200)) 
-    
-    # 4. Test Error
-    print(MyAccount.Withdraw(5000))
+    # 3. Test Report
+    print("\ngenerating report...")
+    print(MyAccount.PrintStatement())
