@@ -44,7 +44,6 @@ class SavingsAccount:
         return f"--- Current Balance: ${self.Balance} ---"
 
 # --- MAIN EXECUTION BLOCK (Testing) ---
-# --- MAIN EXECUTION BLOCK (Testing) ---
 if __name__ == "__main__":
     MyAccount = SavingsAccount()
     
@@ -52,13 +51,13 @@ if __name__ == "__main__":
     print("--- Test 1: Deposit ---")
     print(MyAccount.Deposit(2000))
     
-    # 2. Retirar dinero (Caso Exitoso)
+    # 2. Retirar dinero
     print("\n--- Test 2: Valid Withdraw ---")
     print(MyAccount.Withdraw(500))
     
-    # 3. Validar saldo insuficiente (Requerimiento Clave)
+    # 3. Validar saldo insuficiente
     print("\n--- Test 3: Insufficient Funds ---")
-    print(MyAccount.Withdraw(10000)) # Intentamos sacar más de lo que hay
+    print(MyAccount.Withdraw(10000)) 
     
     # 4. Consultar el saldo
     print("\n--- Test 4: Report ---")
