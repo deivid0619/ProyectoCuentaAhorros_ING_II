@@ -1,0 +1,22 @@
+{
+    "Usuarios": [
+        {
+            "id": "0",
+            "name": "Jacobo",
+            "amount": "5000.0",
+            "password": "1234"
+        },
+        {
+            "id": "1",
+            "name": "David",
+            "amount": "2000.0",
+            "password": "1234"
+        },
+        {
+            "id": "2",
+            "name": "Kevin",
+            "amount": "0",
+            "password": "1234"
+        }
+    ]
+}
