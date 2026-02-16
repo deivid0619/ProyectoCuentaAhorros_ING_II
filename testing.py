@@ -1,4 +1,6 @@
 # --- MAIN EXECUTION BLOCK (Testing) ---
+from banco import SavingsAccount
+
 if __name__ == "__main__":
     
     id_usuario = input("Ingresa tu ID: ")
