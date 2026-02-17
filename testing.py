@@ -3,27 +3,27 @@ from banco import SavingsAccount
 
 if __name__ == "__main__":
     
-    id_usuario = input("Ingresa tu ID: ")
+    id_usuario = input("Enter you ID: ")
     cuenta = SavingsAccount(id_usuario)
 
 if cuenta.encontrado:
     while True:
-        print(f"\n--- Hola {cuenta.name} | Saldo: ${cuenta.amount} ---")
-        print("1. Depositar | 2. Retirar | 3. Transferir | 4. Salir")
-        opcion = input("Elige una opción: ")
+        print(f"\n--- Hello {cuenta.name} | Balance: ${cuenta.amount} ---")
+        print("1. Deposit | 2. Withdraw | 3. Transfer | 4. Exit")
+        opcion = input("Choose a option: ")
 
         if opcion == "1":
-            m = float(input("amount a depositar: "))
+            m = float(input("Amount to deposit: "))
             cuenta.Deposit(m)
         elif opcion == "2":
-            m = float(input("amount a retirar: "))
+            m = float(input("Amount to withdraw: "))
             cuenta.Withdraw(m)
         elif opcion == "3":
-            dest = input("ID del usuario destino: ")
-            m = float(input("amount a transferir: "))
+            dest = input("ID destiny user: ")
+            m = float(input("Amount to transfer: "))
             cuenta.Transfer(dest, m)
         elif opcion == "4":
-            print("¡Adiós!")
+            print("¡Good Bye!")
             break
 else:
-    print("ID no encontrado.")
+    print("ID not found")
